@@ -64,3 +64,45 @@ users = {
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "fluffy"
 # 10. Add another person to the users dictionary
+
+
+
+print(users["Jonathan"]["twitter"])                     #Q1
+
+print(users["Erik"]["home_town"])                       #Q2
+
+print(users["Erik"]["lottery_numbers"])                 #Q3
+
+print(users["Avril"]["pets"][0]["species"])             #Q4
+
+print(min(users["Erik"]["lottery_numbers"]))            #Q5
+
+num_list = []                                           #Q6
+for num in users["Avril"]["lottery_numbers"]:
+    if num%2 == 0:
+        num_list.append(num)
+print(num_list)
+
+users["Erik"]["lottery_numbers"].append(7)              #Q7
+
+users["Erik"]["hometown"] = "Edinburgh"                 #Q8
+
+new_pet = {"name" : "fluffy", "species" : "dog"}        #Q9
+users["Erik"]["pets"].append(new_pet)                   
+#print(users["Erik"]["pets"])
+
+users = {                                               #Q10
+    "Panos" :{
+    "twitter" : "panots",
+    "lottery_number" : [3, 23, 41, 26, 25, 39],
+    "home_town" : "Megara",
+    "pets" : {
+      "name" : "takis",
+      "species" : "turtle"
+    }
+
+    }
+}
+
+#users.append(new_person)
+#print(users["Panos"])
