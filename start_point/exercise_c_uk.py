@@ -28,8 +28,9 @@ united_kingdom.append({"name": "Northern Ireland", "population" : 1811000, "capi
 
 for country in united_kingdom:            #Q3
   print(country["name"], end=" ")
-total_popul = 0  
 
+
+total_popul = 0  
 for popul in united_kingdom:            #Q4
   total_popul += popul["population"]
 print(total_popul)

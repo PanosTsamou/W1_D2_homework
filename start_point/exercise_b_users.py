@@ -85,13 +85,13 @@ print(num_list)
 
 users["Erik"]["lottery_numbers"].append(7)              #Q7
 
-users["Erik"]["hometown"] = "Edinburgh"                 #Q8
+users["Erik"]["home_town"] = "Edinburgh"                 #Q8
 
 new_pet = {"name" : "fluffy", "species" : "dog"}        #Q9
 users["Erik"]["pets"].append(new_pet)                   
 #print(users["Erik"]["pets"])
 
-users = {                                               #Q10
+new_users = {                                              #Q10
     "Panos" :{
     "twitter" : "panots",
     "lottery_number" : [3, 23, 41, 26, 25, 39],
@@ -103,6 +103,6 @@ users = {                                               #Q10
 
     }
 }
-
+users.update(new_users)
 #users.append(new_person)
-#print(users["Panos"])
+# print(users)
